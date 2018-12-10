@@ -48,8 +48,8 @@ public class Robot extends IterativeRobot {
             double x = Controller.getX(GenericHID.Hand.kRight);
             DriveTrain.arcadeDrive(y, x);
         } else if(Controller.getBumper(GenericHID.Hand.kRight)) {
-            double y = Controller.getX(GenericHID.Hand.kRight);
-            double x = Controller.getY(GenericHID.Hand.kLeft);
+            double y = Controller.getY(GenericHID.Hand.kRight);
+            double x = Controller.getX(GenericHID.Hand.kLeft);
             DriveTrain.arcadeDrive(y, x);
         } else {
             // Nothing
